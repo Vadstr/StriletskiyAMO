@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FCA34B6241EC00D00D2DCE6 /* LabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA34B5241EC00D00D2DCE6 /* LabsViewController.swift */; };
+		5FCA34B8241EC01C00D2DCE6 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA34B7241EC01C00D2DCE6 /* TasksViewController.swift */; };
+		5FCA34BD241EC7E900D2DCE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA34BC241EC7E900D2DCE6 /* Extensions.swift */; };
+		5FCA34C1241EC82E00D2DCE6 /* Lab1Task1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA34C0241EC82E00D2DCE6 /* Lab1Task1ViewController.swift */; };
 		DD3C7676241EBCFD00D5E590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C7675241EBCFD00D5E590 /* AppDelegate.swift */; };
-		DD3C7678241EBCFD00D5E590 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C7677241EBCFD00D5E590 /* SceneDelegate.swift */; };
-		DD3C767A241EBCFD00D5E590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C7679241EBCFD00D5E590 /* ViewController.swift */; };
 		DD3C767D241EBCFD00D5E590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C767B241EBCFD00D5E590 /* Main.storyboard */; };
 		DD3C767F241EBCFF00D5E590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3C767E241EBCFF00D5E590 /* Assets.xcassets */; };
 		DD3C7682241EBCFF00D5E590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C7680241EBCFF00D5E590 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FCA34B5241EC00D00D2DCE6 /* LabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsViewController.swift; sourceTree = "<group>"; };
+		5FCA34B7241EC01C00D2DCE6 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		5FCA34BC241EC7E900D2DCE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5FCA34C0241EC82E00D2DCE6 /* Lab1Task1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1Task1ViewController.swift; sourceTree = "<group>"; };
 		DD3C7672241EBCFD00D5E590 /* StriletskiyAMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StriletskiyAMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3C7675241EBCFD00D5E590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD3C7677241EBCFD00D5E590 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD3C7679241EBCFD00D5E590 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD3C767C241EBCFD00D5E590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD3C767E241EBCFF00D5E590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD3C7681241EBCFF00D5E590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FCA34B9241EC51500D2DCE6 /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FCA34B5241EC00D00D2DCE6 /* LabsViewController.swift */,
+				5FCA34B7241EC01C00D2DCE6 /* TasksViewController.swift */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		5FCA34BA241EC52E00D2DCE6 /* Lab1 */ = {
+			isa = PBXGroup;
+			children = (
+				5FCA34C0241EC82E00D2DCE6 /* Lab1Task1ViewController.swift */,
+			);
+			path = Lab1;
+			sourceTree = "<group>";
+		};
+		5FCA34BB241EC55000D2DCE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD3C767E241EBCFF00D5E590 /* Assets.xcassets */,
+				DD3C7680241EBCFF00D5E590 /* LaunchScreen.storyboard */,
+				5FCA34BC241EC7E900D2DCE6 /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DD3C7669241EBCFD00D5E590 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				DD3C7675241EBCFD00D5E590 /* AppDelegate.swift */,
-				DD3C7677241EBCFD00D5E590 /* SceneDelegate.swift */,
-				DD3C7679241EBCFD00D5E590 /* ViewController.swift */,
+				5FCA34B9241EC51500D2DCE6 /* MainViewControllers */,
+				5FCA34BA241EC52E00D2DCE6 /* Lab1 */,
 				DD3C767B241EBCFD00D5E590 /* Main.storyboard */,
-				DD3C767E241EBCFF00D5E590 /* Assets.xcassets */,
-				DD3C7680241EBCFF00D5E590 /* LaunchScreen.storyboard */,
 				DD3C7683241EBCFF00D5E590 /* Info.plist */,
+				5FCA34BB241EC55000D2DCE6 /* Resources */,
 			);
 			path = StriletskiyAMO;
 			sourceTree = "<group>";
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD3C767A241EBCFD00D5E590 /* ViewController.swift in Sources */,
+				5FCA34C1241EC82E00D2DCE6 /* Lab1Task1ViewController.swift in Sources */,
+				5FCA34B6241EC00D00D2DCE6 /* LabsViewController.swift in Sources */,
+				5FCA34B8241EC01C00D2DCE6 /* TasksViewController.swift in Sources */,
 				DD3C7676241EBCFD00D5E590 /* AppDelegate.swift in Sources */,
-				DD3C7678241EBCFD00D5E590 /* SceneDelegate.swift in Sources */,
+				5FCA34BD241EC7E900D2DCE6 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CH9AV8J8W;
+				DEVELOPMENT_TEAM = M92VXVU7J9;
 				INFOPLIST_FILE = StriletskiyAMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CH9AV8J8W;
+				DEVELOPMENT_TEAM = M92VXVU7J9;
 				INFOPLIST_FILE = StriletskiyAMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
