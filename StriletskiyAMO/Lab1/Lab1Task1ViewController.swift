@@ -25,18 +25,25 @@ class Lab1Task1ViewController: UIViewController {
 
         dismissKeyboard()
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     
     @IBAction func didPressGetResult(_ sender: UIButton) {
         
         
         let x = Double(xTextField.text ?? "") ?? 0.0
+
+        let a = Double(aTextField.text ?? "") ?? 0.0
+
+        let b = Double(bTextField.text ?? "") ?? 0.0
+
+        let result = sin(a/b)+pow(Double(sin(a/b)),2)+cos(pow(Double(x),2))+cos(sqrt(x))
+
+
         
-      
-        
-        resultLabel.text = "\(x)"
+        resultLabel.text = "Результат: \(result)"
         
     }
-    
-    
-
 }
