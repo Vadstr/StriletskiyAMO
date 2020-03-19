@@ -16,6 +16,8 @@
 		DD3C767F241EBCFF00D5E590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3C767E241EBCFF00D5E590 /* Assets.xcassets */; };
 		DD3C7682241EBCFF00D5E590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C7680241EBCFF00D5E590 /* LaunchScreen.storyboard */; };
 		DD3C768E241FF53200D5E590 /* Lab1Task2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C768D241FF53200D5E590 /* Lab1Task2ViewController.swift */; };
+		DDA4E837242006660058B155 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4E836242006660058B155 /* GraphViewController.swift */; };
+		DDA4E83924200C7C0058B155 /* Lab1Task3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4E83824200C7C0058B155 /* Lab1Task3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		DD3C7681241EBCFF00D5E590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD3C7683241EBCFF00D5E590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3C768D241FF53200D5E590 /* Lab1Task2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1Task2ViewController.swift; sourceTree = "<group>"; };
+		DDA4E836242006660058B155 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		DDA4E83824200C7C0058B155 /* Lab1Task3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1Task3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				5FCA34C0241EC82E00D2DCE6 /* Lab1Task1ViewController.swift */,
 				DD3C768D241FF53200D5E590 /* Lab1Task2ViewController.swift */,
+				DDA4E836242006660058B155 /* GraphViewController.swift */,
+				DDA4E83824200C7C0058B155 /* Lab1Task3ViewController.swift */,
 			);
 			path = Lab1;
 			sourceTree = "<group>";
@@ -173,8 +179,10 @@
 			files = (
 				5FCA34C1241EC82E00D2DCE6 /* Lab1Task1ViewController.swift in Sources */,
 				5FCA34B6241EC00D00D2DCE6 /* LabsViewController.swift in Sources */,
+				DDA4E837242006660058B155 /* GraphViewController.swift in Sources */,
 				DD3C768E241FF53200D5E590 /* Lab1Task2ViewController.swift in Sources */,
 				5FCA34B8241EC01C00D2DCE6 /* TasksViewController.swift in Sources */,
+				DDA4E83924200C7C0058B155 /* Lab1Task3ViewController.swift in Sources */,
 				DD3C7676241EBCFD00D5E590 /* AppDelegate.swift in Sources */,
 				5FCA34BD241EC7E900D2DCE6 /* Extensions.swift in Sources */,
 			);

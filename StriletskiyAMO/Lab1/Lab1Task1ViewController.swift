@@ -23,10 +23,20 @@ class Lab1Task1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dismissKeyboard()
+        hideKeyboard()
+        setupButton()
     }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+    
+    func setupButton() {
+        let button = UIBarButtonItem(image: UIImage.init(systemName: "square.stack.3d.up"), style: .plain, target: self, action: #selector(show(sender:)))
+        navigationItem.rightBarButtonItem = button
+    }
+
+    @objc func show(sender: UIBarButtonItem) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let vc : GraphViewController = mainStoryboard.instantiateViewController(withIdentifier: GraphViewController.identifier) as? GraphViewController else { return }
+        vc.image = UIImage(named:"lab1task1")
+        present(vc, animated: true, completion: nil)
     }
     
     

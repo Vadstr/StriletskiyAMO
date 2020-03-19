@@ -52,18 +52,18 @@ extension TasksViewController: UITableViewDelegate, UITableViewDataSource {
                 }
                 self.navigationController?.pushViewController(lab1taks1VC, animated: true)
             }
-//            if indexPath.row == 0 {
-//                guard let lab1taks1VC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: Lab1Task1ViewController.identifier) as? Lab1Task1ViewController else {
-//                    return
-//                }
-//                self.navigationController?.pushViewController(lab1taks1VC, animated: true)
-//            }
-//            if indexPath.row == 0 {
-//                guard let lab1taks1VC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: Lab1Task1ViewController.identifier) as? Lab1Task1ViewController else {
-//                    return
-//                }
-//                self.navigationController?.pushViewController(lab1taks1VC, animated: true)
-//            }
+            if indexPath.row == 1 {
+                guard let lab1taks2VC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: Lab1Task2ViewController.identifier) as? Lab1Task2ViewController else {
+                    return
+                }
+                self.navigationController?.pushViewController(lab1taks2VC, animated: true)
+            }
+            if indexPath.row == 2 {
+                guard let lab1taks3VC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: Lab1Task3ViewController.identifier) as? Lab1Task3ViewController else {
+                    return
+                }
+                self.navigationController?.pushViewController(lab1taks3VC, animated: true)
+            }
         } else if labChoosen == 2 {
             
         } else if labChoosen == 3 {
