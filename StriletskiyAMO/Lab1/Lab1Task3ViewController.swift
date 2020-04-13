@@ -36,26 +36,54 @@ class Lab1Task3ViewController: UIViewController {
       @objc func show(sender: UIBarButtonItem) {
           let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
           guard let vc : GraphViewController = mainStoryboard.instantiateViewController(withIdentifier: GraphViewController.identifier) as? GraphViewController else { return }
-          vc.image = UIImage(named:"lab1task3")
+          vc.image = UIImage(named:"lab1task3graf")
           present(vc, animated: true, completion: nil)
       }
        
        @IBAction func didPressGetResult(_ sender: UIButton) {
-           
-           
-           let a = Double(aTextField.text ?? "") ?? 0.0
-
-           let b = Double(bTextField.text ?? "") ?? 0.0
-
-           let n = Double(nTextField.text ?? "") ?? 0.0
-           
-           let p = Double(pTextField.text ?? "") ?? 0.0
-
-           let result = sin(a/b)+pow(Double(sin(a/b)),2)+cos(pow(Double(n),2))+cos(sqrt(p))
 
 
-           
-           resultLabel.text = "Результат: \(result)"
-           
+            let splitedA = (aTextField.text ?? "").split(separator: ",")
+
+            var arrayA: [Double] = []
+
+            for part in splitedA {
+            let trimmed = String(part).trimmingCharacters(in: .whitespacesAndNewlines)
+            arrayA.append(Double(trimmed) ?? 0.0)
+            }
+
+            let splitedB = (bTextField.text ?? "").split(separator: ",")
+
+            var arrayB: [Double] = []
+
+            for part in splitedB {
+            let trimmed = String(part).trimmingCharacters(in: .whitespacesAndNewlines)
+            arrayB.append(Double(trimmed) ?? 0.0)
+            }
+        
+        var f = 0.0
+        for i in 0..<arrayA.count {
+            for j in 0..<arrayB.count {
+                f += arrayA[i] + arrayB[j]
+                }
+            }
+        
+        var s  = 1.0
+        for i in 0..<arrayA.count {
+            s *= arrayA[i]
+        }
+        
+        var t  = 0.0
+        for j in 0..<arrayB.count {
+            t += arrayB[j]
+        }
+        
+        
+        let result = ( s + t ) / f
+
+
+
+            resultLabel.text = "Результат: \(result)"
+
        }
 }

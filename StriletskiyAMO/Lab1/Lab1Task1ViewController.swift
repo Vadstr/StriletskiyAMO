@@ -35,7 +35,7 @@ class Lab1Task1ViewController: UIViewController {
     @objc func show(sender: UIBarButtonItem) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let vc : GraphViewController = mainStoryboard.instantiateViewController(withIdentifier: GraphViewController.identifier) as? GraphViewController else { return }
-        vc.image = UIImage(named:"lab1task1")
+        vc.image = UIImage(named:"lab1task1graf")
         present(vc, animated: true, completion: nil)
     }
     

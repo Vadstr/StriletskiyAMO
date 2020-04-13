@@ -65,7 +65,10 @@ extension TasksViewController: UITableViewDelegate, UITableViewDataSource {
                 self.navigationController?.pushViewController(lab1taks3VC, animated: true)
             }
         } else if labChoosen == 2 {
-            
+            guard let lab2taks1VC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: Lab2ViewController.identifier) as? Lab2ViewController else {
+                return
+            }
+            self.navigationController?.pushViewController(lab2taks1VC, animated: true)
         } else if labChoosen == 3 {
             
         } else if labChoosen == 4 {

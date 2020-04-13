@@ -18,6 +18,7 @@
 		DD3C768E241FF53200D5E590 /* Lab1Task2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C768D241FF53200D5E590 /* Lab1Task2ViewController.swift */; };
 		DDA4E837242006660058B155 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4E836242006660058B155 /* GraphViewController.swift */; };
 		DDA4E83924200C7C0058B155 /* Lab1Task3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4E83824200C7C0058B155 /* Lab1Task3ViewController.swift */; };
+		DDD113842440F52D00143A77 /* Lab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD113832440F52D00143A77 /* Lab2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DD3C768D241FF53200D5E590 /* Lab1Task2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1Task2ViewController.swift; sourceTree = "<group>"; };
 		DDA4E836242006660058B155 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		DDA4E83824200C7C0058B155 /* Lab1Task3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1Task3ViewController.swift; sourceTree = "<group>"; };
+		DDD113832440F52D00143A77 /* Lab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +101,20 @@
 				DD3C7675241EBCFD00D5E590 /* AppDelegate.swift */,
 				5FCA34B9241EC51500D2DCE6 /* MainViewControllers */,
 				5FCA34BA241EC52E00D2DCE6 /* Lab1 */,
+				DDD113822440F4AE00143A77 /* Lab2 */,
 				DD3C767B241EBCFD00D5E590 /* Main.storyboard */,
 				DD3C7683241EBCFF00D5E590 /* Info.plist */,
 				5FCA34BB241EC55000D2DCE6 /* Resources */,
 			);
 			path = StriletskiyAMO;
+			sourceTree = "<group>";
+		};
+		DDD113822440F4AE00143A77 /* Lab2 */ = {
+			isa = PBXGroup;
+			children = (
+				DDD113832440F52D00143A77 /* Lab2ViewController.swift */,
+			);
+			path = Lab2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD113842440F52D00143A77 /* Lab2ViewController.swift in Sources */,
 				5FCA34C1241EC82E00D2DCE6 /* Lab1Task1ViewController.swift in Sources */,
 				5FCA34B6241EC00D00D2DCE6 /* LabsViewController.swift in Sources */,
 				DDA4E837242006660058B155 /* GraphViewController.swift in Sources */,
