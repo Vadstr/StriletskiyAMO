@@ -3,14 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D62AB6A244BBFA60091AC5F /* Lab3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D62AB69244BBFA60091AC5F /* Lab3TableViewCell.swift */; };
+		5DA906F4244B8C6F00EA306A /* Lab3MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA906F3244B8C6F00EA306A /* Lab3MainViewController.swift */; };
+		5DA906F6244B8C8000EA306A /* Lab3TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA906F5244B8C8000EA306A /* Lab3TableViewController.swift */; };
+		5DA906F8244B8CBA00EA306A /* Lab3ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA906F7244B8CBA00EA306A /* Lab3ChartViewController.swift */; };
 		5FCA34B6241EC00D00D2DCE6 /* LabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA34B5241EC00D00D2DCE6 /* LabsViewController.swift */; };
 		5FCA34B8241EC01C00D2DCE6 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA34B7241EC01C00D2DCE6 /* TasksViewController.swift */; };
 		5FCA34BD241EC7E900D2DCE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA34BC241EC7E900D2DCE6 /* Extensions.swift */; };
 		5FCA34C1241EC82E00D2DCE6 /* Lab1Task1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA34C0241EC82E00D2DCE6 /* Lab1Task1ViewController.swift */; };
+		8A4164C6C43C3D2EA82D20BE /* Pods_StriletskiyAMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15357FE8895A1D1B77076CE /* Pods_StriletskiyAMO.framework */; };
 		DD3C7676241EBCFD00D5E590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C7675241EBCFD00D5E590 /* AppDelegate.swift */; };
 		DD3C767D241EBCFD00D5E590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C767B241EBCFD00D5E590 /* Main.storyboard */; };
 		DD3C767F241EBCFF00D5E590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3C767E241EBCFF00D5E590 /* Assets.xcassets */; };
@@ -22,10 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D62AB69244BBFA60091AC5F /* Lab3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3TableViewCell.swift; sourceTree = "<group>"; };
+		5DA906F3244B8C6F00EA306A /* Lab3MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3MainViewController.swift; sourceTree = "<group>"; };
+		5DA906F5244B8C8000EA306A /* Lab3TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3TableViewController.swift; sourceTree = "<group>"; };
+		5DA906F7244B8CBA00EA306A /* Lab3ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3ChartViewController.swift; sourceTree = "<group>"; };
 		5FCA34B5241EC00D00D2DCE6 /* LabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsViewController.swift; sourceTree = "<group>"; };
 		5FCA34B7241EC01C00D2DCE6 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		5FCA34BC241EC7E900D2DCE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5FCA34C0241EC82E00D2DCE6 /* Lab1Task1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1Task1ViewController.swift; sourceTree = "<group>"; };
+		964103A17E5604D6F58A45C5 /* Pods-StriletskiyAMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StriletskiyAMO.release.xcconfig"; path = "Target Support Files/Pods-StriletskiyAMO/Pods-StriletskiyAMO.release.xcconfig"; sourceTree = "<group>"; };
+		A15357FE8895A1D1B77076CE /* Pods_StriletskiyAMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StriletskiyAMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3C7672241EBCFD00D5E590 /* StriletskiyAMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StriletskiyAMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3C7675241EBCFD00D5E590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD3C767C241EBCFD00D5E590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +47,7 @@
 		DDA4E836242006660058B155 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		DDA4E83824200C7C0058B155 /* Lab1Task3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1Task3ViewController.swift; sourceTree = "<group>"; };
 		DDD113832440F52D00143A77 /* Lab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab2ViewController.swift; sourceTree = "<group>"; };
+		FECBAC4737A20B39D9916965 /* Pods-StriletskiyAMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StriletskiyAMO.debug.xcconfig"; path = "Target Support Files/Pods-StriletskiyAMO/Pods-StriletskiyAMO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +55,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4164C6C43C3D2EA82D20BE /* Pods_StriletskiyAMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28F709425AA4AC9AB62A2D30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FECBAC4737A20B39D9916965 /* Pods-StriletskiyAMO.debug.xcconfig */,
+				964103A17E5604D6F58A45C5 /* Pods-StriletskiyAMO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55B8B79C9FADCA698513C745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A15357FE8895A1D1B77076CE /* Pods_StriletskiyAMO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DA906F2244B8C4900EA306A /* Lab3 */ = {
+			isa = PBXGroup;
+			children = (
+				5DA906F3244B8C6F00EA306A /* Lab3MainViewController.swift */,
+				5DA906F5244B8C8000EA306A /* Lab3TableViewController.swift */,
+				5DA906F7244B8CBA00EA306A /* Lab3ChartViewController.swift */,
+				5D62AB69244BBFA60091AC5F /* Lab3TableViewCell.swift */,
+			);
+			path = Lab3;
+			sourceTree = "<group>";
+		};
 		5FCA34B9241EC51500D2DCE6 /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +125,8 @@
 			children = (
 				DD3C7674241EBCFD00D5E590 /* StriletskiyAMO */,
 				DD3C7673241EBCFD00D5E590 /* Products */,
+				28F709425AA4AC9AB62A2D30 /* Pods */,
+				55B8B79C9FADCA698513C745 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +145,7 @@
 				5FCA34B9241EC51500D2DCE6 /* MainViewControllers */,
 				5FCA34BA241EC52E00D2DCE6 /* Lab1 */,
 				DDD113822440F4AE00143A77 /* Lab2 */,
+				5DA906F2244B8C4900EA306A /* Lab3 */,
 				DD3C767B241EBCFD00D5E590 /* Main.storyboard */,
 				DD3C7683241EBCFF00D5E590 /* Info.plist */,
 				5FCA34BB241EC55000D2DCE6 /* Resources */,
@@ -124,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD3C7686241EBCFF00D5E590 /* Build configuration list for PBXNativeTarget "StriletskiyAMO" */;
 			buildPhases = (
+				FD6CFBF329F12111C407035F /* [CP] Check Pods Manifest.lock */,
 				DD3C766E241EBCFD00D5E590 /* Sources */,
 				DD3C766F241EBCFD00D5E590 /* Frameworks */,
 				DD3C7670241EBCFD00D5E590 /* Resources */,
+				E87EF64D0DA9A1C3CE6DAD5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +229,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E87EF64D0DA9A1C3CE6DAD5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StriletskiyAMO/Pods-StriletskiyAMO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StriletskiyAMO/Pods-StriletskiyAMO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StriletskiyAMO/Pods-StriletskiyAMO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD6CFBF329F12111C407035F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StriletskiyAMO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD3C766E241EBCFD00D5E590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -192,8 +280,12 @@
 				5FCA34C1241EC82E00D2DCE6 /* Lab1Task1ViewController.swift in Sources */,
 				5FCA34B6241EC00D00D2DCE6 /* LabsViewController.swift in Sources */,
 				DDA4E837242006660058B155 /* GraphViewController.swift in Sources */,
+				5DA906F4244B8C6F00EA306A /* Lab3MainViewController.swift in Sources */,
 				DD3C768E241FF53200D5E590 /* Lab1Task2ViewController.swift in Sources */,
+				5D62AB6A244BBFA60091AC5F /* Lab3TableViewCell.swift in Sources */,
 				5FCA34B8241EC01C00D2DCE6 /* TasksViewController.swift in Sources */,
+				5DA906F8244B8CBA00EA306A /* Lab3ChartViewController.swift in Sources */,
+				5DA906F6244B8C8000EA306A /* Lab3TableViewController.swift in Sources */,
 				DDA4E83924200C7C0058B155 /* Lab1Task3ViewController.swift in Sources */,
 				DD3C7676241EBCFD00D5E590 /* AppDelegate.swift in Sources */,
 				5FCA34BD241EC7E900D2DCE6 /* Extensions.swift in Sources */,
@@ -338,41 +430,43 @@
 		};
 		DD3C7687241EBCFF00D5E590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECBAC4737A20B39D9916965 /* Pods-StriletskiyAMO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CH9AV8J8W;
+				DEVELOPMENT_TEAM = 7KFHN9UQ5P;
 				INFOPLIST_FILE = StriletskiyAMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Vadim.StriletskiyAMO1;
+				PRODUCT_BUNDLE_IDENTIFIER = Vadim.StriletskiyAMO1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DD3C7688241EBCFF00D5E590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964103A17E5604D6F58A45C5 /* Pods-StriletskiyAMO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CH9AV8J8W;
+				DEVELOPMENT_TEAM = 7KFHN9UQ5P;
 				INFOPLIST_FILE = StriletskiyAMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Vadim.StriletskiyAMO1;
+				PRODUCT_BUNDLE_IDENTIFIER = Vadim.StriletskiyAMO1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
