@@ -66,7 +66,6 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
 
-
     
     // MARK: - UITextFieldDelegate
     
@@ -75,6 +74,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    /// Створює масиви з TextFields для введеня матриць
     func createTextFieldsArrays() {
         var matrixTextField = UITextField()
         for i in 1...4 {
@@ -87,11 +87,11 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
             matrixBTextFields.append(matrixTextField)
         }
     }
-    
+
+    /// Створює масив зUIViews і UILabels для відображення матриць різних розмірів
     func createSizeArrays() {
         var myview = UIView()
         var stack = UIStackView()
-//        var label = UILabel()
         
         stack = view.viewWithTag(400) as! UIStackView
         size4Array.append(stack)
@@ -116,7 +116,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    
+    /// Ховає або показує 4 стовпець та рядок
     func matrixSise4(isHiden: Bool) {
         for view in size4Array {
             view.isHidden = isHiden
@@ -130,6 +130,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    /// Ховає або показує 3 стовпець та рядок
     func matrixSize3(isHiden: Bool) {
         for view in size3Array {
             view.isHidden = isHiden
@@ -143,6 +144,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    /// Функція для відображення матриць різних розмірів залежно від заданого розміру
     func matrixView(size: Int) {
         if size < 4 {
             matrixSise4(isHiden: true)
@@ -158,9 +160,10 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
     // MARK: - method of upper relaxation
     
-    // Printing matrix
+    /// Вивід матриці
     func printMatrix(matrix: [[Double]], roots: [Double]) {
         var stringMatrixToPrint: [String] = []
         var rootsToPrint = roots
@@ -185,7 +188,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-
+    /// Додає елементи масиву
     func sum(_ array: [Double]) -> Double {
         var sum: Double = 0
         for element in array {
@@ -194,7 +197,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         return sum
     }
 
-
+    /// Перевірка чи є дана матриця з головною домінуючою діагоналлю
     func checkMatrix(matrix: [[Double]]) -> Bool {
         var check = true
         
@@ -214,7 +217,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         return check
     }
 
-
+    /// Реалізиція алгоритму верхньої релаксації
     func upperRelaxation(matrix: [[Double]], oldNevyzky: [Double], iterationNumber: Int, epsilon: Double) -> (nevyzky: [Double], iterationNumber: Int) {
         var result: [Double] = oldNevyzky
         let resultIterationNumber = iterationNumber + 1
@@ -226,7 +229,6 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         for i in 0..<matrix.count {
             result[i] = (matrix[i][0] + matrix[i][1] * result[1] + matrix[i][2] * result[2])
             
-            // Если верхняя релаксация, раскоментировать строчку снизу
             result[i] = oldNevyzky[i] + w * (result[i] - oldNevyzky[i])
             diferArray.append(abs(oldNevyzky[i] - result[i]))
         }
@@ -238,6 +240,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+    /// Створення масивів в залежності від варіанту
     func prepareMatrix(isMyVariant: Bool) {
         textResult = ""
         epsilon = Double(epsilonTextField.text ?? "0.01") ?? 0.01
@@ -262,14 +265,13 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
                         [5, 3, -2],
                         [3, 2, -3]]
             matrixB = [-1, 2, 0]
-            
-
         }
         
         textResult.append(contentsOf: "Початкова матриця:\n")
         printMatrix(matrix: matrixA, roots: matrixB)
     }
 
+    /// Перетворена до матриці з домінуючою діагоналлю матриця за варіантом
     func matrixTransformation() {
         matrixA = [[0.99885, -0.00138, -0.00105],
                     [-0.00038, 0.99828, -0.0013],
@@ -282,6 +284,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         solvingTheSystem()
     }
     
+    /// Хід розв'язку з початковими перетвореннями і підготовкою матриці
     func solvingTheSystem() {
         // Нова матриця готова до алгоритму
         var readyMatrix: [[Double]] = []
@@ -320,7 +323,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         
     }
 
-    
+    /// Юзер натиснув розв'язати довільну матрицю
     @IBAction func didPressSolve(_ sender: UIButton) {
         
         prepareMatrix(isMyVariant: false)
@@ -338,6 +341,7 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.pushViewController(resultVC, animated: true)
     }
     
+    /// Юзер натиснув розв'язати матрицю за варіантом
     @IBAction func didPressSolveMyVariant(_ sender: UIButton) {
         
         prepareMatrix(isMyVariant: true)

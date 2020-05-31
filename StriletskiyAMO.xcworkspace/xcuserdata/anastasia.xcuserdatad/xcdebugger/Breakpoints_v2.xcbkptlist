@@ -62,8 +62,8 @@
             filePath = "StriletskiyAMO/Lab5/Lab5ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "matrixView(size:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "StriletskiyAMO/Lab5/Lab5ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "upperRelaxation(matrix:oldNevyzky:iterationNumber:epsilon:)"
             landmarkType = "7">
          </BreakpointContent>
