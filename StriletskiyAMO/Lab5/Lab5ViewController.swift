@@ -318,7 +318,8 @@ class Lab5ViewController: UIViewController, UITextFieldDelegate {
         for i in 1...result.nevyzky.count {
             textResult.append(contentsOf: "\nx\(i) = \(result.nevyzky[i - 1])")
         }
-
+        
+        textResult.append(contentsOf: "\n\nТочність: \(epsilon)")
         textResult.append(contentsOf: "\n\nКількість ітерацій: \(result.iterationNumber)")
         
     }
