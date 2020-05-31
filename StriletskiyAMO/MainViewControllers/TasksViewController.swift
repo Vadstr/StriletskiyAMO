@@ -82,7 +82,10 @@ extension TasksViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(lab4taks1VC, animated: true)
             
         } else if labChoosen == 5 {
-            
+            guard let lab5taks1VC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: Lab5ViewController.identifier) as? Lab5ViewController else {
+                return
+            }
+            self.navigationController?.pushViewController(lab5taks1VC, animated: true)
         }
         
         tableView.deselectRow(at: indexPath, animated: true)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5F7CAC248118FF0099C46B /* Lab5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F7CAB248118FF0099C46B /* Lab5ViewController.swift */; };
+		5D5F7CAE2483B6380099C46B /* Lab5ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F7CAD2483B6380099C46B /* Lab5ResultViewController.swift */; };
 		5D62AB6A244BBFA60091AC5F /* Lab3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D62AB69244BBFA60091AC5F /* Lab3TableViewCell.swift */; };
 		5D62AB6D244F74AA0091AC5F /* Lab4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D62AB6C244F74AA0091AC5F /* Lab4ViewController.swift */; };
 		5DA906F4244B8C6F00EA306A /* Lab3MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA906F3244B8C6F00EA306A /* Lab3MainViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D5F7CAB248118FF0099C46B /* Lab5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab5ViewController.swift; sourceTree = "<group>"; };
+		5D5F7CAD2483B6380099C46B /* Lab5ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab5ResultViewController.swift; sourceTree = "<group>"; };
 		5D62AB69244BBFA60091AC5F /* Lab3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3TableViewCell.swift; sourceTree = "<group>"; };
 		5D62AB6C244F74AA0091AC5F /* Lab4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab4ViewController.swift; sourceTree = "<group>"; };
 		5DA906F3244B8C6F00EA306A /* Lab3MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3MainViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 				A15357FE8895A1D1B77076CE /* Pods_StriletskiyAMO.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D5F7CAA248118D50099C46B /* Lab5 */ = {
+			isa = PBXGroup;
+			children = (
+				5D5F7CAB248118FF0099C46B /* Lab5ViewController.swift */,
+				5D5F7CAD2483B6380099C46B /* Lab5ResultViewController.swift */,
+			);
+			path = Lab5;
 			sourceTree = "<group>";
 		};
 		5D62AB6B244F56740091AC5F /* Lab4 */ = {
@@ -157,6 +170,7 @@
 				DDD113822440F4AE00143A77 /* Lab2 */,
 				5DA906F2244B8C4900EA306A /* Lab3 */,
 				5D62AB6B244F56740091AC5F /* Lab4 */,
+				5D5F7CAA248118D50099C46B /* Lab5 */,
 				DD3C767B241EBCFD00D5E590 /* Main.storyboard */,
 				DD3C7683241EBCFF00D5E590 /* Info.plist */,
 				5FCA34BB241EC55000D2DCE6 /* Resources */,
@@ -295,8 +309,10 @@
 				DD3C768E241FF53200D5E590 /* Lab1Task2ViewController.swift in Sources */,
 				5D62AB6A244BBFA60091AC5F /* Lab3TableViewCell.swift in Sources */,
 				5D62AB6D244F74AA0091AC5F /* Lab4ViewController.swift in Sources */,
+				5D5F7CAC248118FF0099C46B /* Lab5ViewController.swift in Sources */,
 				5FCA34B8241EC01C00D2DCE6 /* TasksViewController.swift in Sources */,
 				5DA906F8244B8CBA00EA306A /* Lab3ChartViewController.swift in Sources */,
+				5D5F7CAE2483B6380099C46B /* Lab5ResultViewController.swift in Sources */,
 				5DA906F6244B8C8000EA306A /* Lab3TableViewController.swift in Sources */,
 				DDA4E83924200C7C0058B155 /* Lab1Task3ViewController.swift in Sources */,
 				DD3C7676241EBCFD00D5E590 /* AppDelegate.swift in Sources */,

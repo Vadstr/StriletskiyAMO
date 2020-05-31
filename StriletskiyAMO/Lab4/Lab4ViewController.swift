@@ -2,7 +2,7 @@
 //  Lab4ViewController.swift
 //  StriletskiyAMO
 //
-//  Created by Головаш Анастасия on 21.04.2020.
+//  Created by Vadim on 21.04.2020.
 //  Copyright © 2020 com.Vadim. All rights reserved.
 //
 
